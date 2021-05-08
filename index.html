@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NASA's Astronomy Picture of the Day</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="container mainContainer">
+        <h1>NASA's Astronomy Picture of the Day</h1>
+        <p>Your source for spectacular images and daily knowledge of our world and beyond.</p>
+        <form>
+          <label for="date">Choose your date:</label>
+          <input type="date" id="datePicker" name="datePicker">
+          <button type="button" class="btn btn-secondary submit_btn">Submit</button>
+        </form>
+        <br>
+      <div class="card mb-3">
+        <div class="row g-0 result">
+          <div class="col-md-2">
+            <img src="assets/api-space.png" id="picture" alt="astronomy image by NASA">
+          </div>
+          <div class="col-md-2">
+            <div class="card-body">
+              <h2 id="title">Space</h2>
+              <p id="explanation">You'll find an explanation here</p>
+              <p id="date">Your chosen date</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <script src="app.js"></script>
+  </body>
+</html>
